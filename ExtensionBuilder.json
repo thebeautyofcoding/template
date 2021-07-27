@@ -1,0 +1,33 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Dynamisierung eines Templates zum \u00dcben",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 9.5.0-9.5.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "9.5.0-9.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "heiner",
+        "name": "dynTemplate",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [],
+        "plugins": [],
+        "vendorName": "Heiner"
+    },
+    "wires": [],
+    "storagePath": "C:\/xampp\/htdocs\/typo3dynamicTemplate\/typo3\/typo3conf\/ext\/",
+    "log": {
+        "last_modified": "2021-07-26 03:15",
+        "extension_builder_version": "9.10.4",
+        "be_user": " (1)"
+    }
+}
