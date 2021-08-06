@@ -1,0 +1,110 @@
+{
+    "tt_content": {
+        "elements": {
+            "imageheadetext": {
+                "color": "#000000",
+                "columns": [
+                    "tx_mask_image",
+                    "tx_mask_header",
+                    "bodytext"
+                ],
+                "description": "Image with Header and Text",
+                "icon": "",
+                "key": "imageheadetext",
+                "label": "ImageHeaderText",
+                "labels": [
+                    "Image",
+                    "Header",
+                    "Text"
+                ],
+                "shortLabel": "imageHeadeText"
+            }
+        },
+        "sql": {
+            "tx_mask_header": {
+                "tt_content": {
+                    "tx_mask_header": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_image": {
+                "tt_content": {
+                    "tx_mask_image": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_header": {
+                "cTypes": [
+                    "header"
+                ],
+                "config": {
+                    "appearance": {
+                        "collapseAll": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "levelLinksPosition": "top",
+                        "newRecordLinkTitle": "",
+                        "showAllLocalizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showSynchronizationLink": "1",
+                        "useSortable": "1"
+                    },
+                    "foreign_sortby": "sorting",
+                    "foreign_table": "tt_content",
+                    "maxitems": "",
+                    "minitems": "",
+                    "overrideChildTca": {
+                        "columns": {
+                            "colPos": {
+                                "config": {
+                                    "default": "999"
+                                }
+                            }
+                        }
+                    },
+                    "type": "inline"
+                },
+                "exclude": "1",
+                "key": "header",
+                "l10n_mode": ""
+            },
+            "tx_mask_image": {
+                "cTypes": [
+                    "image"
+                ],
+                "config": {
+                    "appearance": {
+                        "collapseAll": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "levelLinksPosition": "top",
+                        "newRecordLinkTitle": "",
+                        "showAllLocalizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showSynchronizationLink": "1",
+                        "useSortable": "1"
+                    },
+                    "foreign_sortby": "sorting",
+                    "foreign_table": "tt_content",
+                    "maxitems": "",
+                    "minitems": "",
+                    "overrideChildTca": {
+                        "columns": {
+                            "colPos": {
+                                "config": {
+                                    "default": "999"
+                                }
+                            }
+                        }
+                    },
+                    "type": "inline"
+                },
+                "exclude": "1",
+                "key": "image",
+                "l10n_mode": ""
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+<f:if condition="{data.tx_mask_image}">
+<f:for each="{data.tx_mask_image}" as="data_item">
+<f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject><br />
+</f:for>
+</f:if>
+
+<f:if condition="{data.tx_mask_header}">
+<f:for each="{data.tx_mask_header}" as="data_item">
+<f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject><br />
+</f:for>
+</f:if>
+
+<f:if condition="{data.bodytext}">
+<f:format.nl2br>{data.bodytext}</f:format.nl2br><br />
+</f:if>
+

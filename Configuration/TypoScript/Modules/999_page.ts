@@ -15,6 +15,7 @@ vars.inhalt < styles.content.get
 vars.inhalt.select {
     where = colPos = 1
     orderBy = sorting
+
     languageField = sys_language_uid
     
 }
@@ -28,9 +29,17 @@ page {
     }
     10 = FLUIDTEMPLATE
     10 {
-        file = typo3conf/ext/heiner/Resources/Private/Templates/Default.html
+        templateName=Default
         partialRootPaths{
             10 = EXT:heiner/Resources/Private/Partials
+
+        }
+          templateRootPaths{
+            10 = EXT:heiner/Resources/Private/Templates
+
+        }
+          layoutRootPaths{
+            10 = EXT:heiner/Resources/Private/Layouts
 
         }
 
@@ -51,13 +60,21 @@ page {
             layout = TEXT
             layout.field=layout
  
-            inhalt = CONTENT
+      
+            inhalt=CONTENT
             inhalt {
                 table = tt_content
                 select.where = colPos = 1
                 orderBy = sorting
+               
+     
                 select.languageField = sys_language_uid
+               
             }
+            
+           
+ 
+
         }
     }
 
@@ -144,8 +161,43 @@ lib.contentElement {
 }
 
 tt_content {
-    heiner_newcontentelement =< lib.contentElement
-    heiner_newcontentelement {
-        templateName = Default
+    portfolio_list2 =< lib.contentElement
+    portfolio_list2 {
+        templateName = NewContentElement
     }
+}
+
+// tt_content {
+//    heiner_newcontentelement =< lib.contentElement
+//    heiner_newcontentelement {
+//       templateName = Default
+//       table = tt_content
+//    select {
+//       pidInList = this
+//       where = colPos = 1
+//       orderBy = sorting
+      
+       
+ 
+//       }
+//        renderObj =< tt_content
+  
+// }
+// }
+
+tt_content {
+   portfolio_list2 =< lib.contentElement
+   portfolio_list2 {
+      templateName = NewContentElement
+      dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      dataProcessing.10 {
+         as = images
+         references.fieldName = image
+         references.table = tt_content
+         sorting = title
+         sorting.direction = descending
+       
+ 
+      }
+   }
 }

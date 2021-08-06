@@ -2,14 +2,29 @@ mod.wizards.newContentElement.wizardItems.extra {
     header = Custom Elements
     icon =
     elements {
-        heiner_newcontentelement {
+        portfolio_list {
             iconIdentifier = my-icon-identifier
             title = custom element1
             description = Ein tolles custom element
             tt_content_defValues {
-                CType = heiner_newcontentelement
+                CType = portfolio_list
             }
         }
     }
-    show := addToList(heiner_newcontentelement)
+    show := addToList(portfolio_list)
+}
+mod.wizards.newContentElement.wizardItems.extra {
+    header = Custom Elements
+    icon =
+    elements {
+        portfolio_list2 {
+            iconIdentifier = my-icon-identifier
+            title = custom element2
+            description = Ein tolles custom element2
+            tt_content_defValues {
+                CType = portfolio_list2
+            }
+        }
+    }
+    show := addToList(portfolio_list2)
 }
