@@ -27,8 +27,6 @@ dynTemplate
    `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
    license
 
-Dynamisierung eines Templates zum Üben
-
 **TYPO3**
 
 The content of this document is related to TYPO3 CMS,

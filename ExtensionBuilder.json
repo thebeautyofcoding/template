@@ -1,8 +1,82 @@
 {
-    "modules": [],
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    120,
+                    133.09090423583984
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Content",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "607587172740"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "image",
+                            "propertyType": "Image",
+                            "uid": "1285280157401"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "header",
+                            "propertyType": "String",
+                            "uid": "963876454196"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "bodytext",
+                            "propertyType": "RichText",
+                            "uid": "232069353083"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
     "properties": {
         "backendModules": [],
-        "description": "Dynamisierung eines Templates zum \u00dcben",
+        "description": "",
         "emConf": {
             "category": "plugin",
             "custom_category": "",
@@ -17,16 +91,16 @@
         },
         "extensionKey": "heiner",
         "name": "dynTemplate",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "heiner",
+        "originalVendorName": "Heiner",
         "persons": [],
         "plugins": [],
         "vendorName": "Heiner"
     },
     "wires": [],
-    "storagePath": "C:\/xampp\/htdocs\/typo3dynamicTemplate\/typo3\/typo3conf\/ext\/",
+    "storagePath": "C:\/xampp\/htdocs\/typo3dynamicTemplate\/typo3conf\/ext\/",
     "log": {
-        "last_modified": "2021-07-26 03:15",
+        "last_modified": "2021-08-09 03:45",
         "extension_builder_version": "9.10.4",
         "be_user": " (1)"
     }

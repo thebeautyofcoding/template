@@ -4,7 +4,7 @@ mod.wizards.newContentElement.wizardItems.extra {
     elements {
         portfolio_list {
             iconIdentifier = my-icon-identifier
-            title = custom element1
+            title = custom element
             description = Ein tolles custom element
             tt_content_defValues {
                 CType = portfolio_list
@@ -13,18 +13,18 @@ mod.wizards.newContentElement.wizardItems.extra {
     }
     show := addToList(portfolio_list)
 }
-mod.wizards.newContentElement.wizardItems.extra {
-    header = Custom Elements
-    icon =
-    elements {
-        portfolio_list2 {
-            iconIdentifier = my-icon-identifier
-            title = custom element2
-            description = Ein tolles custom element2
-            tt_content_defValues {
-                CType = portfolio_list2
-            }
-        }
-    }
-    show := addToList(portfolio_list2)
-}
+// mod.wizards.newContentElement.wizardItems.extra {
+//     header = Custom Elements
+//     icon =
+//     elements {
+//         portfolio_list2 {
+//             iconIdentifier = my-icon-identifier
+//             title = custom element2
+//             description = Ein tolles custom element2
+//             tt_content_defValues {
+//                 CType = portfolio_list2
+//             }
+//         }
+//     }
+//     show := addToList(portfolio_list2)
+// }

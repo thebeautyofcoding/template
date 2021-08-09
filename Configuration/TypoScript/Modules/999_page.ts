@@ -155,49 +155,44 @@ tt_content.b13-2cols-with-header-container {
 }
 
 lib.contentElement {
-    templateRootPaths.200 = EXT:heiner/Resources/Private/Templates/
+    templateRootPaths.200 = EXT:heiner/Resources/Private/Templates/Content/
     layoutRootPaths.200 = EXT:heiner/Resources/Private/Layouts/
     partialRootPaths.200 = EXT:heiner/Resources/Private/Partials/
 }
 
-tt_content {
-    portfolio_list2 =< lib.contentElement
-    portfolio_list2 {
-        templateName = NewContentElement
-    }
-}
-
 // tt_content {
-//    heiner_newcontentelement =< lib.contentElement
-//    heiner_newcontentelement {
-//       templateName = Default
-//       table = tt_content
-//    select {
-//       pidInList = this
-//       where = colPos = 1
-//       orderBy = sorting
-      
-       
- 
-//       }
-//        renderObj =< tt_content
-  
-// }
+//     portfolio_list =< lib.contentElement
+//     portfolio_list {
+//         templateName = NewContentElement
+//     }
 // }
 
+
+
+
 tt_content {
-   portfolio_list2 =< lib.contentElement
-   portfolio_list2 {
-      templateName = NewContentElement
-      dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+   portfolio_list =< lib.contentElement
+   portfolio_list {
+      templateName = PortfolioList
+      dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
       dataProcessing.10 {
-         as = images
-         references.fieldName = image
-         references.table = tt_content
-         sorting = title
-         sorting.direction = descending
+          pidInList = this
+          table=tx_heiner_domain_model_content
+     
+        #where = portfolio_list = 155
+        where.data = field:uid
+        where.intval = 1
+        where.wrap = portfolio_list = |
+         as = elements
+         orderBy=sorting
        
- 
+         dataProcessing {
+            11 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            11 {
+               references.fieldName = image
+               
+            }
+         }
       }
    }
 }

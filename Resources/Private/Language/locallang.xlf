@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:heiner/Resources/Private/Language/locallang" date="2021-08-09T15:45:01Z" product-name="heiner">
+		<header/>
+		<body>
+			<trans-unit id="tx_heiner_domain_model_content" resname="tx_heiner_domain_model_content">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="tx_heiner_domain_model_content.image" resname="tx_heiner_domain_model_content.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_heiner_domain_model_content.header" resname="tx_heiner_domain_model_content.header">
+				<source>Header</source>
+			</trans-unit>
+			<trans-unit id="tx_heiner_domain_model_content.bodytext" resname="tx_heiner_domain_model_content.bodytext">
+				<source>Bodytext</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

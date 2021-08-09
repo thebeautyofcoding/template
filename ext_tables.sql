@@ -1,10 +1,10 @@
-CREATE TABLE tt_content (
-    portfolio_list2 VARCHAR(255) DEFAULT '0' NOT NULL,
- );
+#
+# Table structure for table 'tx_heiner_domain_model_content'
+#
+CREATE TABLE tx_heiner_domain_model_content (
 
-custom_image
+	image int(11) unsigned NOT NULL default '0',
+	header varchar(255) DEFAULT '' NOT NULL,
+	bodytext text
 
-
-CREATE TABLE tt_content (
-    custom_image VARCHAR(255) DEFAULT '0' NOT NULL,
- );
+);

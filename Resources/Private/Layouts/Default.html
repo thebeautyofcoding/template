@@ -1,20 +1,20 @@
 
 
-
+<f:debug>{layout}</f:debug>
 
 <f:if condition="{layout}=='1'">
-    
 
 
- frontendlayout=1
-    <f:render section="portfolio"/>
+
+
+    <f:render section="content" />
 
 
 </f:if>
 
-<f:if condition="{layout}=='0'">
+<f:if condition="!{layout}">
 
-    frontendlayout=0
-    <f:render section="content"/>
+    
+    <f:render section="portfolio"/>
 </f:if>
 
