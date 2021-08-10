@@ -80,13 +80,15 @@ page {
 
  
     includeCSS {
-      10=EXT:heiner/Resources/Public/Css/agency4.css
+     
        
-        30=EXT:heiner/Resources/Public/Css/structure.css
-         40=EXT:heiner/Resources/Public/Css/custom.css
+  
+    
           50=EXT:heiner/Resources/Public/Css/global.css
             60=EXT:heiner/Resources/Public/Css/el_demo.css
-
+                  70=EXT:heiner/Resources/Public/Css/structure.css
+             80=EXT:heiner/Resources/Public/Css/agency4.css
+     90=EXT:heiner/Resources/Public/Css/custom.css
     }
  
     includeJS {
@@ -102,13 +104,13 @@ page {
       40=EXT:heiner/Resources/Public/js/jquery.jplayer.min.js
           50=EXT:heiner/Resources/Public/js/animations/animations.js
         60=EXT:heiner/Resources/Public/js/translate3d.js
-            70=EXT:heiner/Resources/Public/js/email.js
+            80=EXT:heiner/Resources/Public/js/email.js
        
       
   
    
         
-            90=EXT:heiner/Resources/Public/js/scripts.js
+            70=EXT:heiner/Resources/Public/js/scripts.js
  
       100=EXT:heiner/Resources/Public/js/el_demo.js
    }
@@ -121,7 +123,13 @@ tt_content.b13-2cols-with-header-container < lib.contentElement
 tt_content.b13-2cols-with-header-container {
     templateName = 2ColsWithHeader
     templateRootPaths {
-        10 = EXT:heiner/Resources/Private/Templates
+        10 = EXT:heiner/Resources/Private/Templates/Container
+    }
+       partialRootPaths {
+        10 = EXT:heiner/Resources/Private/Partials
+    }
+       layoutRootPaths {
+        10 = EXT:heiner/Resources/Private/Layouts
     }
     dataProcessing {
         100 = B13\Container\DataProcessing\ContainerProcessor
@@ -133,7 +141,13 @@ tt_content.b13-2cols-with-header-container < lib.contentElement
 tt_content.b13-2cols-with-header-container {
     templateName = 2ColsWithHeader
     templateRootPaths {
-        10 = EXT:heiner/Resources/Private/Templates
+        10 = EXT:heiner/Resources/Private/Templates/Container
+    }
+       partialRootPaths {
+        10 = EXT:heiner/Resources/Private/Partials
+    }
+       layoutRootPaths {
+        10 = EXT:heiner/Resources/Private/Layouts
     }
     dataProcessing {
         200 = B13\Container\DataProcessing\ContainerProcessor
